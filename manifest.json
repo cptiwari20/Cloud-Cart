@@ -1,0 +1,41 @@
+{
+    "name": "CloudCart",
+    "version": "0.0.0.1",
+    "description": "A tool to collect all your shopping data.",
+    "short_name": "CC",
+    "icons": {
+        "128": "asset/images/logo.png"
+    },
+    "browser_action": {
+        "browser_style": false,
+        "default_title": "CloudCart",
+        "default_popup": "/popup.html"
+    },
+    "content_scripts": [
+        {
+          "all_frames": true,
+          "css": ["asset/css/main.css"],
+          "js": [
+            "js/modules/jquery.min.js",
+            "js/popup.js",
+            "js/main.js"
+          ],
+          "matches": [
+            "<all_urls>"
+          ],
+          "run_at": "document_end"
+        }
+      ],
+    "manifest_version": 2,
+    "permissions": [
+        "tabs",
+        "storage",
+        "notifications"
+    ],
+    "background": {
+        "page": "background.html",
+        "persistent": false
+    }
+
+
+}

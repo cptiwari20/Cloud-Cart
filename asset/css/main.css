@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-width: 300px;
+    min-height: 400px;
+}
+
+.add-to-cloudCart{
+    color: black;
+    background: white;
+    height: 36px;
+    margin-bottom: 10px;
+    width: -webkit-fill-available;
+}
